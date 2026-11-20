@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Second Wind Improv · UChicago</title>
+  <meta name="description" content="Second Wind is a new, beginner-friendly improv group at UChicago. Sign up to hear about the first meeting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbf6ee;
+      --ink: #1f1b16;
+      --muted: #6b6257;
+      --accent: #c2410c;
+      --accent-soft: #fde7d8;
+      --card: #ffffff;
+      --line: #eadfce;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 400 17px/1.6 "Inter", system-ui, sans-serif;
+    }
+    .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+    h1, h2 { font-family: "Fraunces", Georgia, serif; line-height: 1.1; margin: 0; }
+
+    /* Hero */
+    header { padding: 64px 0 48px; text-align: center; }
+    .tag {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 14px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+    h1 { font-size: clamp(48px, 13vw, 84px); font-weight: 800; letter-spacing: -0.02em; }
+    h1 span { color: var(--accent); }
+    .lede { font-size: 19px; color: var(--muted); margin: 18px auto 30px; max-width: 30em; }
+    .btn {
+      display: inline-block;
+      background: var(--ink);
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 999px;
+    }
+    .btn:hover { background: var(--accent); }
+
+    /* Sections */
+    section { padding: 36px 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 30px; font-weight: 600; margin-bottom: 14px; }
+    p { margin: 0 0 14px; }
+    ul.points { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 12px; }
+    ul.points li {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+    ul.points strong { display: block; }
+    ul.points span { color: var(--muted); font-size: 15px; }
+
+    /* Meeting card */
+    .meeting {
+      background: var(--card);
+      border: 2px dashed var(--accent);
+      border-radius: 18px;
+      padding: 24px;
+      text-align: center;
+    }
+    .meeting .when { font-family: "Fraunces", Georgia, serif; font-size: 28px; font-weight: 600; }
+    .meeting .sub { color: var(--muted); margin: 6px 0 0; }
+
+    /* Form */
+    .form-box {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+    .form-box iframe { width: 100%; height: 1100px; border: 0; display: block; }
+    .form-placeholder { padding: 40px 24px; text-align: center; color: var(--muted); }
+
+    footer { padding: 36px 0 56px; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 15px; }
+    footer a { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="tag">New at UChicago</div>
+      <h1>Second <span>Wind</span></h1>
+      <p class="lede">A brand-new, beginner-friendly improv group. We're getting started this year and would love for you to be there.</p>
+      <a class="btn" href="#signup">I'm interested</a>
+    </header>
+
+    <section>
+      <h2>Honestly, we're new at this too</h2>
+      <p>We don't really know what we're doing yet, and that's kind of the point. Second Wind is for anyone who wants to try improv, have fun, and figure it out together.</p>
+      <ul class="points">
+        <li><strong>No experience needed</strong><span>Never done improv or theater? Perfect, neither have we.</span></li>
+        <li><strong>About once a week</strong><span>A relaxed, low-commitment meeting. Come when you can.</span></li>
+        <li><strong>No pressure to perform</strong><span>Just games, scenes, and laughing with people.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>First meeting</h2>
+      <div class="meeting">
+        <div class="when">Date TBA</div>
+        <p class="sub">Sign up below and we'll email you as soon as it's set.</p>
+      </div>
+    </section>
+
+    <section id="signup">
+      <h2>Sign up</h2>
+      <p>Takes about a minute. We'll only use your info to tell you about Second Wind.</p>
+      <div class="form-box">
+        <!-- FORM: replace this placeholder with the Google Form embed iframe -->
+        <div class="form-placeholder">The interest form is coming soon. Check back shortly!</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Second Wind Improv · University of Chicago</p>
+      <!-- Add Instagram / email here when ready -->
+    </footer>
+  </div>
+</body>
+</html>
